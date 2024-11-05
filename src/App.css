@@ -78,3 +78,116 @@ a {
 .autocomplete-item:hover {
   background-color: #f0f0f0;
 }
+/* Estilos para el componente Home */
+
+body {
+  background: url('https://wallpapercave.com/wp/wp3943375.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Star Jedi', sans-serif; /* Asegúrate de incluir una fuente de Star Wars si lo deseas */
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container > div {
+  margin: 0 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container > div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo específico para los cards */
+.card {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  width: 200px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Estilos para el SearchBar */
+.search-bar {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.footer {
+  background-color: #282c34; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  padding: 1rem; /* Espaciado interno */
+}
+
+.footer a {
+  color: #61dafb; /* Color de los enlaces */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Efecto al pasar el ratón sobre el enlace */
+}
+/* styles.css o App.css */
+.navbar {
+  background-color: #000; /* Fondo negro para una estética de Star Wars */
+  color: #fff; /* Texto blanco para contraste */
+  padding: 1rem; /* Espaciado */
+}
+
+.navbar-brand {
+  font-family: 'Star Jedi', sans-serif; /* Fuente temática de Star Wars */
+  font-size: 2rem; /* Tamaño del texto del título */
+  color: #ffcc00; /* Color dorado para el texto */
+}
+
+.navbar .btn {
+  transition: background-color 0.3s ease; /* Transición suave para el botón */
+}
+
+.navbar .btn:hover {
+  background-color: #ffcc00; /* Color de fondo dorado al pasar el ratón */
+  color: #000; /* Cambiar texto a negro cuando el fondo es dorado */
+}
+
+.ml-auto {
+  margin-left: auto; /* Alinear el botón a la derecha */
+}

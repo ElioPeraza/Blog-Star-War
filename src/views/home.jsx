@@ -3,6 +3,8 @@ import Card from "../component/card";
 import PlanetCard from "../component/planetCard";
 import VehicleCard from "../component/vehicleCard";
 import SearchBar from "../component/searchBar";
+import '../App.css';
+
 
 export const Home = () => {
     const [people, setPeople] = useState([]);
@@ -40,7 +42,7 @@ export const Home = () => {
 
     return (
         <div className="text-center mt-5">
-            <h1>Star Wars API</h1>
+            <h1>STAR WARS API</h1>
 			<SearchBar /> {/* Add the SearchBar here */}
             <div className="container d-flex flex-row" style={{ overflowX: "scroll" }}>
                 {people.map((item, index) => (

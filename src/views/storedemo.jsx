@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, {  useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { Context } from "../store/appContext";
 
 
 
-export const Demo = () => {
+export const StoreDemo = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -19,9 +19,7 @@ export const Demo = () => {
 							style={{ background: item.background }}>
 							<Link to={"/single/" + index}>
 								<span>Link to: {item.title}</span>
-							</Link>
-							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
+							</Link>{
 							item.background === "orange" ? (
 								<p style={{ color: item.initial }}>
 									Check store/flux.js scroll to the actions to see the code

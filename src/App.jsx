@@ -1,7 +1,7 @@
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
+import { StoreDemo } from "./views/storedemo";
+import { SingleItem } from './views/singleitem';
 import injectContext from "./store/appContext";
-import ScrollToTop  from "./component/scrollToTop";
+import BackToTop from "./component/BackToTop";
 import { Home } from "./views/home";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -16,18 +16,18 @@ const App = () => {
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
-				<ScrollToTop>
+				<BackToTop>
 					<Navbar />
-					<Routes>
+					<Routes>S
 						<Route path="/" element={<Home />} />
 						<Route path="/details/:type/:id" element={<Details />} />
-						<Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} />
+						<Route path="/demo" element={<StoreDemo />} />
+						<Route path="/single/:theid" element={<SingleItem />} />
 						<Route path="/favorites" element={<Favorites />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />
-				</ScrollToTop>
+				</BackToTop>
 			</BrowserRouter>
 		</div>
 	);
