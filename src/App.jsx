@@ -1,25 +1,37 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import injectContext from './store/appContext';
+import { Demo } from "./views/demo";
+import { Single } from "./views/single";
+import injectContext from "./store/appContext";
+import ScrollToTop  from "./component/scrollToTop";
+import { Home } from "./views/home";
+import { Navbar } from "./component/navbar";
+import { Footer } from "./component/footer";
+import { Details } from "./views/Details";
 
-import ContactList from './views/ContactList';
-import { AddContact } from './views/AddContact';
-import { UpdateContact } from './views/UpdateContact';
-import { NotFound } from './views/NotFound';
-import './App.css';
+import { Favorites } from "./views/favorites";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ContactList />} />
-          <Route path="/addcontact" element={<AddContact />} />
-          <Route path="/update/:id" element={<UpdateContact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
-}
+	const basename = import.meta.env.VITE_BASENAME || "";
+
+	return (
+		<div>
+			<BrowserRouter basename={basename}>
+				<ScrollToTop>
+					<Navbar />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/details/:type/:id" element={<Details />} />
+						<Route path="/demo" element={<Demo />} />
+						<Route path="/single/:theid" element={<Single />} />
+						<Route path="/favorites" element={<Favorites />} />
+						<Route path="*" element={<h1>Not found!</h1>} />
+					</Routes>
+					<Footer />
+				</ScrollToTop>
+			</BrowserRouter>
+		</div>
+	);
+};
 
 export default injectContext(App);
+
