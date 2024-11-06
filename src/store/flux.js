@@ -16,14 +16,12 @@ const getState = ({ getStore, getActions, setStore }) => {
           favorites: [],
       },
       actions: {
-          // Use getActions to call a function within a function
+          
           exampleFunction: () => {
               getActions().changeColor(0, "green");
           },
           loadSomeData: () => {
-              /**
-                  fetch().then().then(data => setStore({ "foo": data.bar }))
-              */
+          
           },
           toggleFavorite: (item) => {
               // Validate item structure
@@ -35,22 +33,22 @@ const getState = ({ getStore, getActions, setStore }) => {
               const store = getStore();
               const favorites = store.favorites;
 
-              // Log the current favorites and the item to toggle
+            
               console.log("Current Favorites:", favorites);
               console.log("Item to Toggle:", item);
 
-              // Check if the item with both uid and type already exists in favorites
+            
               const exists = favorites.some(fav => fav.uid === item.uid && fav.type === item.type);
 
-              // If it exists, remove it; otherwise, add it
+              
               const newFavorites = exists
                   ? favorites.filter(fav => !(fav.uid === item.uid && fav.type === item.type))
                   : [...favorites, { uid: item.uid, name: item.name, type: item.type }];
 
-              // Log the updated favorites
+              
               console.log("Updated Favorites:", newFavorites);
 
-              // Update the store with the new favorites array
+              
               setStore({ favorites: newFavorites });
           },
           changeColor: (index, color) => {
@@ -60,7 +58,6 @@ const getState = ({ getStore, getActions, setStore }) => {
                   return elm;
               });
 
-              // Reset the global store
               setStore({ demo: demo });
           }
       }

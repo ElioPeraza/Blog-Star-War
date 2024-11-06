@@ -10,11 +10,11 @@ export const Favorites = () => {
 
     return (
         <div className="container">
-            <h1>Your Favorites</h1>
+            <h1>Favoritos</h1>
             <div className="d-flex flex-wrap">
                 {store.favorites.length > 0 ? (
                     store.favorites.map((item) => {
-                        // Conditional rendering based on type
+                        
                         switch (item.type) {
                             case "character":
                                 return (
@@ -32,7 +32,7 @@ export const Favorites = () => {
                         }
                     })
                 ) : (
-                    <p>No favorites added yet.</p>
+                    <p>No hay favoritos agregados todavia.</p>
                 )}
             </div>
         </div>

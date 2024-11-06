@@ -6,7 +6,7 @@ const SearchBar = () => {
     const [filteredResults, setFilteredResults] = useState([]);
     const navigate = useNavigate();
 
-    // Fetch data directly from API based on query
+    
     useEffect(() => {
         const fetchSearchResults = async () => {
             if (!query.trim()) {
@@ -27,7 +27,7 @@ const SearchBar = () => {
                 const vehicleData = await vehicleResponse.json();
                 const vehicles = vehicleData.results.map(item => ({ ...item, type: "vehicle" }));
 
-                // Combine all results and update the state
+                
                 setFilteredResults([...characters, ...planets, ...vehicles]);
             } catch (error) {
                 console.error("Error fetching search results:", error);
@@ -39,8 +39,8 @@ const SearchBar = () => {
 
     const handleSelectItem = (type, uid) => {
         navigate(`/details/${type}/${uid}`);
-        setQuery(""); // Clear the query after navigation
-        setFilteredResults([]); // Clear autocomplete suggestions
+        setQuery(""); 
+        setFilteredResults([]); 
     };
 
     return (

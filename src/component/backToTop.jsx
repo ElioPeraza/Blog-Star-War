@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-class ScrollToTop extends React.Component {
+class BackToTop extends React.Component {
 	componentDidUpdate(prevProps) {
 		if (this.props.location !== prevProps.location) {
 			window.scrollTo(0, 0);
@@ -13,8 +13,8 @@ class ScrollToTop extends React.Component {
 	}
 }
 
-export default ScrollToTop;
-ScrollToTop.propTypes = {
+export default BackToTop;
+BackToTop.propTypes = {
 	location: PropTypes.object,
 	children: PropTypes.any
 };

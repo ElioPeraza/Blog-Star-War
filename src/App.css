@@ -78,13 +78,13 @@ a {
 .autocomplete-item:hover {
   background-color: #f0f0f0;
 }
-/* Estilos para el componente Home */
+
 
 body {
   background: url('https://wallpapercave.com/wp/wp3943375.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
-  font-family: 'Star Jedi', sans-serif; /* Asegúrate de incluir una fuente de Star Wars si lo deseas */
+  font-family: 'Star Jedi', sans-serif; 
 }
 
 .text-center {
@@ -114,7 +114,7 @@ h1 {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-/* Estilo específico para los cards */
+
 .card {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
@@ -140,7 +140,7 @@ h1 {
   color: #ccc;
 }
 
-/* Estilos para el SearchBar */
+
 .search-bar {
   margin-bottom: 20px;
   padding: 10px;
@@ -154,40 +154,40 @@ h1 {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .footer {
-  background-color: #282c34; /* Color de fondo del footer */
-  color: white; /* Color del texto */
-  padding: 1rem; /* Espaciado interno */
+  background-color: #282c34; 
+  color: white; 
+  padding: 1rem; 
 }
 
 .footer a {
-  color: #61dafb; /* Color de los enlaces */
+  color: #61dafb;
 }
 
 .footer a:hover {
-  text-decoration: underline; /* Efecto al pasar el ratón sobre el enlace */
+  text-decoration: underline; 
 }
-/* styles.css o App.css */
+
 .navbar {
-  background-color: #000; /* Fondo negro para una estética de Star Wars */
-  color: #fff; /* Texto blanco para contraste */
-  padding: 1rem; /* Espaciado */
+  background-color: #000; 
+  color: #fff; 
+  padding: 1rem; 
 }
 
 .navbar-brand {
-  font-family: 'Star Jedi', sans-serif; /* Fuente temática de Star Wars */
-  font-size: 2rem; /* Tamaño del texto del título */
-  color: #ffcc00; /* Color dorado para el texto */
+  font-family: 'Star Jedi', sans-serif; 
+  font-size: 2rem; 
+  color: #ffcc00; 
 }
 
 .navbar .btn {
-  transition: background-color 0.3s ease; /* Transición suave para el botón */
+  transition: background-color 0.3s ease; 
 }
 
 .navbar .btn:hover {
-  background-color: #ffcc00; /* Color de fondo dorado al pasar el ratón */
-  color: #000; /* Cambiar texto a negro cuando el fondo es dorado */
+  background-color: #ffcc00; 
+  color: #000; 
 }
 
 .ml-auto {
-  margin-left: auto; /* Alinear el botón a la derecha */
+  margin-left: auto; 
 }

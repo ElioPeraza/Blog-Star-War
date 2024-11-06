@@ -6,7 +6,6 @@ import { Home } from "./views/home";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Details } from "./views/Details";
-
 import { Favorites } from "./views/favorites";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

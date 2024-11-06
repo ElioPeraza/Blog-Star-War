@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Card = (props) => {
     const { actions, store } = useContext(Context);
-    // Check if the current item is a favorite
+    
     const isFavorite = store.favorites.some(fav => fav.uid === props.uid && fav.type === props.type);
     const navigate = useNavigate();
 
