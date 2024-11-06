@@ -1,6 +1,5 @@
 import React, {  useContext } from "react";
 import { Link } from "react-router-dom";
-
 import { Context } from "../store/appContext";
 
 
@@ -22,7 +21,7 @@ export const StoreDemo = () => {
 							</Link>{
 							item.background === "orange" ? (
 								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
+									
 								</p>
 							) : null}
 							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>

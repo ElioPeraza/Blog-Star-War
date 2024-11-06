@@ -9,7 +9,7 @@ export const SingleItem = () => {
     return (
         <div className="jumbotron">
             <h1 className="display-4">
-                This will show the demo element: {store.demo[params.theid]?.title}
+                Elementos: {store.demo[params.theid]?.title}
             </h1>
             <hr className="my-4" />
             <Link to="/">
