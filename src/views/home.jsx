@@ -11,7 +11,7 @@ export const Home = () => {
     const [planets, setPlanets] = useState([]);
     const [vehicles, setVehicles] = useState([]);
 
-    // Helper function to fetch data if not cached
+    
     const fetchData = async (url, setState, key) => {
         const cachedData = localStorage.getItem(key);
         if (cachedData) {
@@ -42,8 +42,8 @@ export const Home = () => {
 
     return (
         <div className="text-center mt-5">
-            <h1>STAR WARS API</h1>
-			<SearchBar /> {/* Add the SearchBar here */}
+            <h1>WELCOME TO STAR WARS API</h1>
+			<SearchBar /> 
             <div className="container d-flex flex-row" style={{ overflowX: "scroll" }}>
                 {people.map((item, index) => (
                     <Card key={index} name={item.name} uid={item.uid} type="character" />
